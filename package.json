@@ -5,6 +5,7 @@
   "main": "lib/index.js",
   "scripts": {
     "build": "babel src -d lib",
+    "prepublish": "npm run build",
     "test": "mocha test"
   },
   "repository": {

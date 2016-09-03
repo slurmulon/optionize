@@ -39,7 +39,7 @@ function goodFoo (bar) {
 
 badFoo({ baz: 'boo' })
 
-goodFoo(some({ baz: 'win'}))
+goodFoo(some({ baz: 'win' }))
 goodFoo(none) // doesn't explode :)
 ```
 

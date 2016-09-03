@@ -1,77 +1,81 @@
-export class Option {
+export * from './option'
+export * from './some'
+export * from './none'
 
-  constructor(any) {
-    if (new.target === Option) {
-      throw new TypeError('Cannot construct instances of Option, must be either Some or None')
-    }
+// export class Option {
 
-    this.any = any
-  }
+//   constructor(any) {
+//     if (new.target === Option) {
+//       throw new TypeError('Cannot construct instances of Option, must be either Some or None')
+//     }
 
-  isSome() {
-    return false
-  }
+//     this.any = any
+//   }
 
-  isNone() {
-    return false
-  }
+//   isSome() {
+//     return false
+//   }
 
-  get() {
-    return this.any
-  }
+//   isNone() {
+//     return false
+//   }
 
-   // TODO:filter()
+//   get() {
+//     return this.any
+//   }
 
-}
+//    // TODO:filter()
 
-export class Some extends Option {
+// }
 
-  constructor(any) {
-    super(any)
-  }
+// export class Some extends Option {
 
-  isSome() {
-    return true
-  }
+//   constructor(any) {
+//     super(any)
+//   }
 
-  getOrElse(fallback) {
-    return this.any
-  }
+//   isSome() {
+//     return true
+//   }
 
-  map(fn) {
-    return fn(this.any)
-  }
+//   getOrElse(fallback) {
+//     return this.any
+//   }
 
-  forEach(fn) {
-    [this.any].forEach(fn)
-  }
+//   map(fn) {
+//     return fn(this.any)
+//   }
 
-}
+//   forEach(fn) {
+//     [this.any].forEach(fn)
+//   }
 
-export class None extends Option {
+// }
 
-  constructor() {
-    super(null) // TODO: give this more consideration
-  }
+// export class None extends Option {
 
-  isNone() {
-    return true
-  }
+//   constructor() {
+//     super(null) // TODO: give this more consideration
+//   }
 
-  getOrElse(fallback) {
-    return fallback
-  }
+//   isNone() {
+//     return true
+//   }
 
-  map(fn) {
-    return this.any
-  }
+//   getOrElse(fallback) {
+//     return fallback
+//   }
 
-  forEach(fn) {
-    return
-  }
+//   map(fn) {
+//     return this.any
+//   }
 
-}
+//   forEach(fn) {
+//     return
+//   }
 
-export const none = ((any) => new None(any))()
-export const some =  (any) => new Some(any)
+// }
+
+// export const none = ((any) => new None(any))()
+// export const some =  (any) => new Some(any)
 

@@ -51,4 +51,4 @@ If you are interested in contributing, simply open up a well-justified PR or ema
 
 # License
 
-ISC
+MIT

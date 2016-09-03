@@ -25,4 +25,3 @@ export class Option {
 }
 
 export default Option
-

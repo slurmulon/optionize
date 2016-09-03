@@ -25,4 +25,3 @@ export class None extends Option {
 }
 
 export const none = ((any) => new None(any))()
-

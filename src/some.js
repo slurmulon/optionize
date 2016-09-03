@@ -25,4 +25,3 @@ export class Some extends Option {
 }
 
 export const some = (any) => new Some(any)
-

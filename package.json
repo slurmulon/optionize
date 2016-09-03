@@ -2,7 +2,7 @@
   "name": "optionize",
   "version": "0.0.2",
   "description": "Optional values for JavaScript",
-  "main": "src/index.js",
+  "main": "lib/index.js",
   "scripts": {
     "build": "babel src -d lib",
     "test": "mocha test"

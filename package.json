@@ -1,5 +1,5 @@
 {
-  "name": "option-box",
+  "name": "optionize",
   "version": "0.0.1",
   "description": "Optional values for JavaScript",
   "main": "src/index.js",

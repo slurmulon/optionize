@@ -1,0 +1,32 @@
+{
+  "name": "option-box",
+  "version": "0.0.1",
+  "description": "Optional values for JavaScript",
+  "main": "src/index.js",
+  "scripts": {
+    "build": "babel src -d lib",
+    "test": "mocha test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/slurmulon/optionize.git"
+  },
+  "keywords": [
+    "option",
+    "some",
+    "none",
+    "box",
+    "type"
+  ],
+  "author": "Erik Vavro <me@madhax.io>",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/slurmulon/optionize/issues"
+  },
+  "homepage": "https://github.com/slurmulon/optionize#readme",
+  "devDependencies": {
+    "babel-cli": "^6.14.0",
+    "babel-core": "^6.14.0",
+    "babel-preset-es2015": "^6.14.0"
+  }
+}

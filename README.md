@@ -5,7 +5,7 @@
 # Why?
 
 Because [null is evil](https://sidburn.github.io/blog/2016/03/20/null-is-evil) for a variety of reasons and other languages, such as Scala,
-address this issue through a simple `Option` type, where any boxed value is either `Some` or `None`. [This article] covers the generic behaviors of `Some` and `None`.
+address this issue through a simple `Option` type, where any boxed value is either `Some` or `None`. [This article](http://danielwestheide.com/blog/2012/12/19/the-neophytes-guide-to-scala-part-5-the-option-type.html) covers the generic behaviors of `Some` and `None` using the Scala API.
 
 `optionize` simulates this behavior in JavaScript with an extremely simple and idiomatic API:
 

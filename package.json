@@ -19,7 +19,7 @@
     "type"
   ],
   "author": "Erik Vavro <me@madhax.io>",
-  "license": "ISC",
+  "license": "MIT",
   "bugs": {
     "url": "https://github.com/slurmulon/optionize/issues"
   },

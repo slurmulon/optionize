@@ -30,18 +30,26 @@ function badFoo (bar) {
     return bar.baz
   }
 
-  return bar
+  return {}
 }
 
 function goodFoo (bar) {
   return bar.getOrElse({}).baz
 }
 
-badFoo({ baz: 'boo' })
+badFoo({ baz: 'boo' }) // returns 'boo'
+badFoo(null) // returns {}
 
-goodFoo(some({ baz: 'win' }))
-goodFoo(none) // doesn't explode :)
+goodFoo(some({ baz: 'win' })) // returns 'win'
+goodFoo(none) // returns {}
 ```
+
+## Downsides
+
+Nothing is perfect and everything comes with tradeoffs. Here's what isn't great about using `Some` and `None`:
+
+* Doesn't play with truthy/falsy, so you can't utilize `||` or `&&`
+* Due to JavaScript's limited pattern matching abilities, you still end up using `if` or ternary conditions to wrap a value as either `Some` or `None` (this can probably be improved with a simple implicit method, TODO)
 
 ## Install
 

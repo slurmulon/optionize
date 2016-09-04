@@ -1,6 +1,6 @@
 {
   "name": "optionize",
-  "version": "0.0.6",
+  "version": "0.0.7",
   "description": "Optional values for JavaScript",
   "main": "lib/index.js",
   "scripts": {
